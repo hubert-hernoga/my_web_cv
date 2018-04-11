@@ -21,7 +21,7 @@ from cv_maker.views import TitlePage, Project, CoverLatter, Blog, Contact, BlogP
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('title_page/', TitlePage.as_view(), name='title_page'),
+    url('^', TitlePage.as_view(), name='project'),
     url('project/', Project.as_view(), name='project'),
     url('cover_latter/', CoverLatter.as_view(), name='cover_latter'),
     url('blog/', Blog.as_view(), name='blog'),
