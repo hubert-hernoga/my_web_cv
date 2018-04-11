@@ -5,7 +5,7 @@ from django.shortcuts import render
 class TitlePage(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/index-eng.html')
+        return render(request, 'multipage/pl/index-pl.html')
 
 
 class Project(View):
@@ -17,28 +17,28 @@ class Project(View):
 class CoverLatter(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/cover-latter-eng.html')
+        return render(request, 'multipage/pl/cover-latter-pl.html')
 
 
 class Blog(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/blog_eng.html')
+        return render(request, 'multipage/pl/blog_pl.html')
 
 
 class BlogPost(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/blog-full-post-eng.html')
+        return render(request, 'multipage/pl/blog-full-post-pl.html')
 
 
 class Contact(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/contact-eng.html')
+        return render(request, 'multipage/pl/contact-pl.html')
 
 
 class Portfolio(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/portfolio-full.html')
+        return render(request, 'multipage/pl/portfolio-full.html')

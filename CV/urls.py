@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from cv_maker.views import TitlePage, Project, CoverLatter, Blog, Contact, BlogPost, Portfolio
+from cv_maker.views import TitlePage, Project, CoverLatter, Blog, BlogPost, Portfolio
 
 
 urlpatterns = [
@@ -26,7 +26,7 @@ urlpatterns = [
     url('cover_latter/', CoverLatter.as_view(), name='cover_latter'),
     url('blog/', Blog.as_view(), name='blog'),
     url('blog_post/', BlogPost.as_view(), name='blog_post'),
-    url('contact/', Contact.as_view(), name='contact'),
+    # url('contact/', Contact.as_view(), name='contact'),
     url('portfolio/', Portfolio.as_view(), name='portfolio'),
 
 
