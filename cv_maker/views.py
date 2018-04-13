@@ -8,28 +8,27 @@ class TitlePage(View):
         return render(request, 'multipage/index.html')
 
 
-class Project(View):
-    def get(self, request):
-        pass
-        return render(request, 'multipage/project.html')
-
-
 class CoverLatter(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/cover-latter.html')
+        return render(request, 'multipage/cover-letter.html')
 
 
-class Blog(View):
+class Projects(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/blog.html')
+        return render(request, 'multipage/projects.html')
 
 
-class BlogPost(View):
+class ProjectShop(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/blog-full-post.html')
+        return render(request, 'multipage/project-shop.html')
+
+class ProjectCV(View):
+    def get(self, request):
+        pass
+        return render(request, 'multipage/project-cv.html')
 
 
 class Contact(View):
@@ -42,3 +41,9 @@ class Portfolio(View):
     def get(self, request):
         pass
         return render(request, 'multipage/portfolio-full.html')
+
+
+class Blog(View):
+    def get(self, request):
+        pass
+        return render(request, 'multipage/blog.html')
