@@ -28,7 +28,6 @@ urlpatterns = [
     url('project_cv/', ProjectCV.as_view(), name='project_cv'),
     # url('contact/', Contact.as_view(), name='contact'),
     url('portfolio/', Portfolio.as_view(), name='portfolio'),
-    url('generator_pdf/', GeneratorPDF.as_view(), name='generator_pdf'),
 
 
 
