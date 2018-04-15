@@ -16,19 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from cv_maker.views import TitlePage, CoverLatter, Projects, ProjectShop, ProjectCV, Portfolio
+from cv_maker.views import TitlePage, CoverLatter, Projects, ProjectShop, ProjectCV, Portfolio, GeneratorPDF
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$', TitlePage.as_view(), name='title_page'),
-
     url('cover_letter/', CoverLatter.as_view(), name='cover_latter'),
     url('projects/', Projects.as_view(), name='blog'),
     url('project_shop/', ProjectShop.as_view(), name='project_shop'),
     url('project_cv/', ProjectCV.as_view(), name='project_cv'),
     # url('contact/', Contact.as_view(), name='contact'),
     url('portfolio/', Portfolio.as_view(), name='portfolio'),
+    url('generator_pdf/', GeneratorPDF.as_view(), name='generator_pdf'),
 
 
 

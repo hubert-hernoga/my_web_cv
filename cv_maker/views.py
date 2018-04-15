@@ -1,10 +1,19 @@
 from django.views import View
 from django.shortcuts import render
+import pyautogui
+import cloudconvert
 
 
 class TitlePage(View):
     def get(self, request):
-        pass
+        return render(request, 'multipage/index.html')
+
+
+class GeneratorPDF(View):
+    def get(self, request):
+        scr = pyautogui.screenshot()
+        scr.save('scr.png')
+
         return render(request, 'multipage/index.html')
 
 
