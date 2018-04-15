@@ -4,7 +4,6 @@ from django.shortcuts import render
 
 class TitlePage(View):
     def get(self, request):
-        pass
         return render(request, 'multipage/index.html')
 
 
