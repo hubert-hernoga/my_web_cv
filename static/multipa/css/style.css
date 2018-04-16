@@ -535,6 +535,12 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   margin-left: 10px;
   background-color: #5da4d9;
 }
+.link:hover {
+    background-color: lightgrey;
+}
+.text-color {
+    color: #808080;
+}
 .btn:hover,
 .btn:focus {
   background-color: #5da4d9;
