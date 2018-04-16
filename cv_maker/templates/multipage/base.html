@@ -255,12 +255,21 @@
                         <div class="section-wrapper z-depth-1 wow fadeIn" data-wow-delay="0.1s">
                             <div class="col s12 m12 l10 website right" >
                                 <div class="row">
+
+                            <form action="https://github.com/hubert-hernoga">
+                                {% csrf_token %}
                                     <div class="col s12 m12 l6">
-                                       <span><a href="https://github.com/hubert-hernoga">Mój GitHub</a></span>
+                                        <button class="btn btn-info" formtarget="_blank">Mój GitHub</button>
                                     </div>
-                                    <div class="col col s12 m12 l6">
-                                        <span><a href="https://www.linkedin.com/in/hubert-hernoga-433903160/">Mój LinkedIn</a></span>
+                            </form>
+
+                            <form action="https://www.linkedin.com/in/hubert-hernoga-433903160">
+                                {% csrf_token %}
+                                    <div class="col col s12 m12 l6 ">
+                                        <button class="btn btn-info" formtarget="_blank">Mój LinkedIn</button>
                                     </div>
+                            </form>
+
                                 </div>
                             </div>
                         </div>
