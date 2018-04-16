@@ -12,12 +12,16 @@
                         <div class="thumbnail z-depth-1 animated">
                             <img src="{% static 'multipa/images/online_shop_js.png' %}" alt="" class="responsive-img">
                             <div class="blog-details">
-                                <div class="post-title" id="blog-post-1">
-                                   <a href="https://github.com/PolishProjects/OnlineShop" target="_blank">
-                                        <h2>Online shop</h2>
-                                        <span>(GitHub)</span>
-                                    </a>
-                                </div>
+
+                                <form action="https://github.com/PolishProjects/OnlineShop">
+                                    {% csrf_token %}
+                                        <div class="post-title" id="blog-post-1">
+                                            <button class="btn btn-info" formtarget="_blank">
+                                                <h2>repository</h2>
+                                            </button>
+                                        </div>
+                                </form>
+
                                 <div class="post-details">
 
                                     <h3>Główne funkcjonalności projektu:</h3>
