@@ -127,6 +127,8 @@ body {
 }
 .container {
   margin-top: 24px;
+  width: 100%;
+  height: auto;
 }
 /* style for
 
@@ -183,7 +185,7 @@ body {
 }
 .sidebar .heading nav .pdf-collapse i {
   height: 30px;
-  font-size: 18pt;
+  font-size: 26pt;
   line-height: 24pt;
   margin-top: 20px;
   padding: 0px 6px;
