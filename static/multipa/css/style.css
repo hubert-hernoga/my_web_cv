@@ -155,12 +155,15 @@ body {
 .sidebar .heading .nav-icon {
   position: absolute;
   top: 0;
-  padding: 0 16px;
+  left: 16px;
+}
+.sidebar .heading .pdf-collapse {
+  display: block !important;
 }
 .nav-pdf {
   position: absolute;
   top: 0;
-  padding: 0 380px;
+  right: 16px;
 }
 .mdi-pdf {
   font-size: 31px;
@@ -175,6 +178,13 @@ body {
   font-size: 18pt;
   line-height: 24pt;
   background-color: #5da4d9;
+  margin-top: 20px;
+  padding: 0px 6px;
+}
+.sidebar .heading nav .pdf-collapse i {
+  height: 30px;
+  font-size: 18pt;
+  line-height: 24pt;
   margin-top: 20px;
   padding: 0px 6px;
 }
@@ -471,7 +481,7 @@ body {
 
 */
 .cover-latter {
-  padding: 30px;
+  padding: 80px;
   margin-right: 5px;
   margin-bottom: 24px;
   background-color: white;
@@ -500,11 +510,14 @@ body {
 .cover-latter .cover-title h4 {
   font-weight: 500;
 }
-.cover-latter .cover-title p {
-  margin-top: 0px;
-}
 .cover-latter .signature h4 {
   margin: 0px;
+}
+.signature {
+ float: right;
+ width: 100%;
+ text-align: right;
+
 }
 /* ***** Contact  *****
 *
