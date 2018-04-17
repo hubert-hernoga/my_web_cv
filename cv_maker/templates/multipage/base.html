@@ -103,7 +103,7 @@
                             <div class="nav-pdf">
                                 <nav>
                                     <div class="nav-wrapper">
-                                      <a href="{% static 'CV_hubert_heroga.pdf' %}" download><i class="fa fa-file-pdf-o mdi-pdf"></i></a>
+                                      <a href="{% static 'CV_hubert_heroga.pdf' %}" class="pdf-collapse" download><i class="fa fa-file-pdf-o mdi-pdf"></i></a>
                                     </div>
                                 </nav>
                             </div>
@@ -194,10 +194,11 @@
                                  <!-- Skills -->
                                 <div class="col m12 l9 s12 skill-line a5 wow fadeIn" data-wow-delay="0.3s">
                                     <h3>Umiejętności zawodowe</h3>
-                                    <span>Junior&emsp;&emsp;&emsp;&emsp;&emsp;</span>
-                                    <span>Mid&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</span>
-                                    <span>Senior</span><hr><br>
-
+                                        <div id="experience">
+                                            <span class="junior">Junior</span>
+                                            <span class="mid">Mid</span>
+                                            <span class="senior">Senior</span>
+                                        </div><hr><br>
                                     <span>Python</span>
                                     <div class="progress">
                                         <div class="determinate"> 35% </div>
