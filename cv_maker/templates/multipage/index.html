@@ -1,5 +1,6 @@
 {% extends 'multipage/base.html' %}
 {% load static %}
+{% load i18n %}
     {% block content %}
 
         <section class="col s12 m12 l8 section">
@@ -14,7 +15,7 @@
                         <i class="fa fa-comments"></i>
                     </div>
                     <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s" >
-                        <a href="/projects"><h2 class="text-color">Projekty</h2></a>
+                        <a href="/projects"><h2 class="text-color">{% trans "Projekty" %}</h2></a>
 
                         <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.2s" >
                             <h3><a href="/project_cv" class="link text-color">Web CV (strona internetowa)</a></h3>
