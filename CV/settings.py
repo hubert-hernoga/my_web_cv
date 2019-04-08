@@ -29,7 +29,7 @@ SECRET_KEY = '5=i_y-y##fs9i6u*+^#3-edcv56cu(q_z%4lnz@5%6@wo!q&u5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hubert-cv.herokuapp.com', 'localhost', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['my-web-cv-online.herokuapp.com', 'localhost', '0.0.0.0', '127.0.0.1']
 
 
 # Application definition
