@@ -42,7 +42,7 @@ class InterDrinks(View):
 class FrenchTouch(View):
     def get(self, request):
         pass
-        return render(request, 'multipage/french_touch.html')
+        return render(request, 'multipage/frenchtouch.html')
 
 class Contact(View):
     def get(self, request):
