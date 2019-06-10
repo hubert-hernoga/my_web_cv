@@ -29,6 +29,20 @@ class ProjectCV(View):
         pass
         return render(request, 'multipage/project-cv.html')
 
+class LaSante(View):
+    def get(self, request):
+        pass
+        return render(request, 'multipage/lasante.html')
+
+class InterDrinks(View):
+    def get(self, request):
+        pass
+        return render(request, 'multipage/interdrinks.html')
+
+class FrenchTouch(View):
+    def get(self, request):
+        pass
+        return render(request, 'multipage/french_touch.html')
 
 class Contact(View):
     def get(self, request):
