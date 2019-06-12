@@ -10,7 +10,7 @@
                 <div class="blog"> <!-- full Blog start -->
                     <div class="col s12 m12 l12 blog-post">
                         <div class="thumbnail z-depth-1 animated">
-                            <img src="{% static 'multipage/images/my_web_cv.png' %}" alt="" class="responsive-img">
+                            <img src="{% static 'multipage/images/french_touch.jpg' %}" alt="" class="responsive-img">
                             <div class="blog-details">
 
                                 <form action="http://static1.squarespace.com/static/5a822fa0a803bbab55212690/5a8237baf9619a464efcd30e/5a8674fd8165f5f7f8e8f2ee/1556649306834/private.jpg?format=1500w">
@@ -21,26 +21,34 @@
                                             </button>
                                         </div>
                                 </form>
+                                <form action="https://staging.frenchtouchlabellevie.fr/home">
+                                    {% csrf_token %}
+                                        <div class="post-title" id="blog-post-3">
+                                            <button class="btn" formtarget="_blank">
+                                                <h2>Website</h2>
+                                            </button>
+                                        </div>
+                                </form>
 
                                 <div class="post-details">
 
-                                    <h3>Główne funkcjonalności projektu:</h3>
+                                    <h3>Główne zadania:</h3>
 
-                                        <p>- prezentowanie treści</p>
+                                        <p>- zaprojektowanie bazy danych <br><i>(DynamoDb/NoSQL)</i></p>
 
-                                        <p>- prosty dostęp do serwisów tj. GitHub, LinkedIn</p>
+                                        <p>- stworzenie i udostępnienie domen <br><i>(CloudFront/Route53)</i></p>
 
-                                        <p>- możliwość podejrzenia kodu projektów (podpięte repozytoria)</p>
+                                        <p>- zapewnienie Continuous Integration i Continuous Delivery <br><i>(CodePipeline/S3)</i></p>
 
-                                        <p>- aplikacja responsywna</p>
+                                        <p>- stworzenie i udostępnienia API <br><i>(API GATEWAY/Lambda/S3)</i></p>
 
-                                    <h3>Plany rozwoju: </h3>
+                                        <p>- wysyłanie e-maili do klienta z danymi z formularzy kontaktowych <br><i>(Simple Email Service)</i></p>
 
-                                        <p>- generowanie pdf</p>
+                                        <p>- stworzenie panela administracyjnego <br><i>(REST Vue, HTML, CSS, JavaScript)</i></p>
 
-                                        <p>- zmiana języków</p>
+                                        <p>- zabezpieczenie API dla panela administracyjnego <br><i>(Cognito)</i></p>
 
-                                        <p>- wysyłanie maili</p>
+                                        <p><i>całość napisana za pomocą Python + Serverless (AWS) + boto3 + GitHub </i></p>
 
                                 </div>
                             </div>
