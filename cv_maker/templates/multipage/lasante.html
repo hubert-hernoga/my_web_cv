@@ -13,45 +13,38 @@
                             <img src="{% static 'multipage/images/LaSante_Health_Center_logo.png' %}" alt="" class="responsive-img">
                             <div class="blog-details">
 
-                                <form action="http://static1.squarespace.com/static/5a822fa0a803bbab55212690/5a8237baf9619a464efcd30e/5a8674fd8165f5f7f8e8f2ee/1556649306834/private.jpg?format=1500w">
-                                    {% csrf_token %}
-                                        <div class="post-title" id="blog-post-3">
-                                            <button class="btn btn-info" formtarget="_blank">
-                                                <h2>repozytorium</h2>
-                                            </button>
-                                        </div>
-                                </form>
-                                <form action="https://lasante.net/">
-                                    {% csrf_token %}
-                                        <div class="post-title" id="blog-post-3">
-                                            <button class="btn" formtarget="_blank">
-                                                <h2>Website</h2>
-                                            </button>
-                                        </div>
-                                </form>
+                                    <div class="post-title" id="blog-post-3">
+                                        <button onclick="location.href='http://static1.squarespace.com/static/5a822fa0a803bbab55212690/5a8237baf9619a464efcd30e/5a8674fd8165f5f7f8e8f2ee/1556649306834/private.jpg?format=1500w'" class="btn btn-info" formtarget="_blank">
+                                            <h2>Repository</h2>
+                                        </button>
+
+                                        <button onclick="location.href='https://lasante.net/'" class="btn" formtarget="_blank">
+                                            <h2>Website</h2>
+                                        </button>
+                                    </div>
 
                                 <div class="post-details">
 
-                                    <h3>Główne zadania:</h3>
+                                    <h3>Main tasks:</h3>
 
-                                        <p>- zaprojektowanie API dla nowego checkoutu <br><i>(Python, MySQL, SqlAlchemy, AG, Lambda, S3)</i></p>
+                                        <p>- API design for a new checkout <br><i>(Python, MySQL, SqlAlchemy, Api Gateway, Lambda, S3)</i></p>
 
-                                        <p>- pokrycie stworzonego kodu testami <br><i>(Python/Unitesty)</i></p>
+                                        <p>- covering the created code with tests <br><i>(Unitests)</i></p>
 
-                                        <p>- Continuous Integration i Continuous Delivery <br><i>(CodePipeline/S3/Jenkins)</i></p>
+                                        <p>- Continuous Integration and Continuous Delivery <br><i>(CodePipeline, S3, Jenkins)</i></p>
 
-                                        <p>- komunikacja z zewnętrzym API kurierów francuskich <br><i>(Python)</i></p>
+                                        <p>- communication with external API couriers <br></p>
 
-                                        <p>- konwertowanie danych z plików xml, excl <br><i>(Python)</i></p>
+                                        <p>- converting data from xml files, excl <br></p>
 
-                                        <p>- migracja bazy danych na chmurę <br><i>(MySQL, Serverless, AuroraDb, RDS, EC2)</i></p>
+                                        <p>- database migration to the AWS cloud <br><i>(MySQL, AuroraDb, RDS, EC2)</i></p>
 
-                                        <p>- testy wydajnościowe API <br><i>(Python, Locust)</i></p>
+                                        <p>- API performance tests <br><i>(Locust)</i></p>
 
-                                        <p>- napisanie aplikacji wysyłającej powiadomienia na Slacka w razie wystąpienia błędów pojawiających się w kodzie
-                                            <br><i>(Python, AG, Lambda, CW, SNS, SQS, Slack)</i></p>
+                                        <p>- created application that sends notifications to Slack in case of errors appearing in the code
+                                            <br><i>(Api Gateway, Lambda, CloudWatch, SNS, SQS, Slack)</i></p>
 
-                                        <p><i>całość napisana za pomocą Python + Serverless (AWS) + boto3 + GitHub <br></i></p>
+                                        <p><i>Base: Python + Serverless (AWS) + boto3 + GitHub <br></i></p>
 
                                 </div>
                             </div>
